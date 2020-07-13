@@ -1,4 +1,4 @@
-import React, { createElement, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import {Button as ButtonContainer } from'./Button.styles';
 
 export type ButtonTheme = 'primary' | 'secondary' | 'noOutline' | 'hover' ;
