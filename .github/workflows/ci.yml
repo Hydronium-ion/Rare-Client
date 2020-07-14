@@ -31,6 +31,6 @@ jobs:
       - name: Run yarn install
         run: yarn install
 
-      - name: Run npm run build
+      - name: Run yarn build
         run: yarn build
 ​
