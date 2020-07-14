@@ -1,32 +1,32 @@
-name: Node.js CI
+# name: Node.js CI
 
-on:
-  pull_request:
-    branches: [dev]
+# on:
+#   pull_request:
+#     branches: [dev]
 
-jobs:
-  build:
-    name: CI
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
+# jobs:
+#   build:
+#     name: CI
+#     runs-on: ubuntu-latest
+#     defaults:
+#       run:
+#         shell: bash
 
-    strategy:
-      matrix:
-        node-version: [12.x]
+#     strategy:
+#       matrix:
+#         node-version: [12.x]
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: ${{ matrix.node-version }}
 
-      - name: Run npm ci
-        run: npm ci
+#       - name: Run npm ci
+#         run: npm ci
 
-      - name: Run npm run build
-        run: npm run build --if-present
+#       - name: Run npm run build
+#         run: npm run build --if-present
