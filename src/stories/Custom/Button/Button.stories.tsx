@@ -6,7 +6,7 @@ import Button from '@/components/Custom/Button/Button.component';
 import Icon from '@/components/Custom/Icon/Icon.component';
 
 export default {
-  title: 'components|Button',
+  title: 'custom|Button',
   component: Button,
   decorators: [withKnobs]
 };
@@ -14,21 +14,19 @@ export default {
 export const button = () => {
   return (
     <Button theme="primary" size="medium">
-      <span>출간하기</span> 
+      <span>출간하기</span>
     </Button>
   );
 };
-
 
 export const hoverButton = () => {
   return (
     <Button theme="hover" size="medium">
       <Icon icon="unlock" color="#868E96" size="12" margin="0rem 0.75rem 0rem 0rem" />
-      <span>새 글 작성</span> 
+      <span>새 글 작성</span>
     </Button>
   );
 };
-
 
 export const customButton = () => {
   const size = select('size', ['small', 'medium', 'big'], 'medium');
@@ -40,4 +38,3 @@ export const customButton = () => {
     </Button>
   );
 };
-

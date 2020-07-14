@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Header from '@/components/Header/Header.component';
+
 const App = () => {
-  return <div>핼로</div>;
+  return <Header></Header>;
 };
 
 export default App;

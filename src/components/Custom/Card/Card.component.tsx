@@ -1,8 +1,21 @@
 import React from 'react';
 
 import Icon from '@/components/Custom/Icon/Icon.component';
+import Avatar from '@/components/Custom/Avatar/Avatar.component';
 
-import {CardContainer, Avatar, UserContainer, CardFooter, UserInteractionContainer, ViewsContainer, LikesContainer, ThumbnailContainer, CardTitle, CardContents, UserName, NumberContainer} from './Card.styles';
+import {
+  CardContainer,
+  UserContainer,
+  CardFooter,
+  UserInteractionContainer,
+  ViewsContainer,
+  LikesContainer,
+  ThumbnailContainer,
+  CardTitle,
+  CardContents,
+  UserName,
+  NumberContainer
+} from './Card.styles';
 
 export interface ICardProp {
   title: string;
@@ -11,12 +24,12 @@ export interface ICardProp {
   avatar: string;
   username: string;
   createAt: string;
-  views: number; 
+  views: number;
   likes: number;
 }
 
 const Card = (props: ICardProp) => {
-  const {title, contents, thumbnail, avatar, username, createAt, views, likes} = props;
+  const { title, contents, thumbnail, avatar, username, createAt, views, likes } = props;
   return (
     <CardContainer>
       <div>
@@ -26,23 +39,23 @@ const Card = (props: ICardProp) => {
         </div>
       </div>
       <ThumbnailContainer>
-        <img src={thumbnail} alt=""/>
+        <img src={thumbnail} alt="" />
       </ThumbnailContainer>
       <CardFooter>
         <UserContainer>
           <span>
-            <Avatar src={avatar} alt="" />
+            <Avatar src={avatar} size="small" />
           </span>
           <UserName>{username}</UserName>
           <span>{createAt}</span>
         </UserContainer>
         <UserInteractionContainer>
           <ViewsContainer>
-            <Icon icon='views' size="0.9rem" />
+            <Icon icon="views" size="0.9rem" />
             <NumberContainer>{views}</NumberContainer>
           </ViewsContainer>
-          <LikesContainer> 
-            <Icon icon='likes' size="0.6rem" color="red" />
+          <LikesContainer>
+            <Icon icon="likes" size="0.6rem" color="red" />
             <NumberContainer>{likes}</NumberContainer>
           </LikesContainer>
         </UserInteractionContainer>

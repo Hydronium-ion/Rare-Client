@@ -5,13 +5,11 @@ import Card from '@/components/Custom/Card/Card.component';
 import { CARD_DATA } from '@/components/Custom/Card/Card.data';
 
 export default {
-  title: 'components|Card',
+  title: 'custom|Card',
   component: Card,
   decorators: [withKnobs]
-}
+};
 
 export const card = () => {
-  return (
-    <Card {...CARD_DATA} />
-  )
-}
+  return <Card {...CARD_DATA} />;
+};
