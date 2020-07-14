@@ -30,8 +30,8 @@ jobs:
 
       - name: Run npm run build
         run: npm run build-dev --if-present
-  
-     - name: zip 생성
+
+      - name: zip 생성
         run: zip -qq -r ./build.zip .
         shell: bash
 
