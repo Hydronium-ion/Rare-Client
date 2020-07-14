@@ -1,7 +1,16 @@
 import React from 'react';
 
+import Main from '@/pages/Main/Main.component';
+
+import GlobalStyle from '@/styles/GlobalStyle';
+
 const App = () => {
-  return <div>핼로</div>;
+  return (
+    <>
+      <GlobalStyle />
+      <Main />
+    </>
+  );
 };
 
 export default App;
