@@ -41,6 +41,34 @@ const hover = css`
   }
 `;
 
+const navigationBorderStyle = css`
+  :active {
+    color: #343a40;
+    border: 0;
+    border-bottom: 1px solid rgb(134, 142, 150);
+  }
+  :focus {
+    outline: 0;
+  }
+`;
+
+const navigation = css`
+  background-color: #fff;
+  border-radius: 0;
+  color: #868e96;
+  border-bottom: 1px solid #fff;
+  ${navigationBorderStyle}
+`;
+
+const activeNavigation = css`
+  background-color: #fff;
+  border-radius: 0;
+  color: #343a40;
+  border: 0;
+  border-bottom: 1px solid rgb(134, 142, 150);
+  ${navigationBorderStyle}
+`;
+
 const getButtonTheme = (props: IButtonProp) => {
   switch (props.theme) {
     case 'primary':
@@ -51,6 +79,8 @@ const getButtonTheme = (props: IButtonProp) => {
       return noOutline;
     case 'hover':
       return hover;
+    case 'navigation':
+      return props.active ? activeNavigation : navigation;
   }
 };
 
@@ -64,8 +94,6 @@ const getButtonSize = (props: IButtonProp) => {
 };
 
 export const Button = styled.button`
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕',
-    나눔고딕, 'Nanum Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', arial, 돋움, Dotum, Tahoma, Geneva, sans-serif;
   font-weight: 500;
   height: 2rem;
   padding: 0 1.125rem;

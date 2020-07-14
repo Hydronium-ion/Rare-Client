@@ -1,9 +1,16 @@
 import React from 'react';
 
-import Header from '@/components/Header/Header.component';
+import Main from '@/pages/Main/Main.component';
+
+import GlobalStyle from '@/styles/GlobalStyle';
 
 const App = () => {
-  return <Header></Header>;
+  return (
+    <>
+      <GlobalStyle />
+      <Main />
+    </>
+  );
 };
 
 export default App;

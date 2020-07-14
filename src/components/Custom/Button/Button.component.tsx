@@ -1,23 +1,20 @@
 import React, { ReactNode } from 'react';
-import {Button as ButtonContainer } from'./Button.styles';
+import { Button as ButtonContainer } from './Button.styles';
 
-export type ButtonTheme = 'primary' | 'secondary' | 'noOutline' | 'hover' ;
-export type ButtonSize = "big" | "medium" | "small";
+export type ButtonTheme = 'primary' | 'secondary' | 'noOutline' | 'hover' | 'navigation';
+export type ButtonSize = 'big' | 'medium' | 'small';
 
 export interface IButtonProp {
-  theme: ButtonTheme; 
-  size: ButtonSize
+  theme: ButtonTheme;
+  size: ButtonSize;
   children: ReactNode;
+  active?: boolean;
   onClick?: (event: React.MouseEvent) => void;
 }
 
-const Button = ({theme, size, children, onClick}: IButtonProp) => {
+const Button = ({ theme, size, children, active, onClick }: IButtonProp) => {
   return (
-    <ButtonContainer 
-      theme={theme}
-      size={size}
-      onClick={onClick}
-    >
+    <ButtonContainer theme={theme} size={size} active={active} onClick={onClick}>
       {children}
     </ButtonContainer>
   );

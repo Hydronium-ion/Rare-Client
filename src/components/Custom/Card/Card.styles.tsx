@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
+  margin: 0 0 1rem 0;
   font-size: 0.7rem;
   display: flex;
   flex-direction: column;
@@ -8,12 +9,12 @@ export const CardContainer = styled.div`
   padding: 0.5rem 1rem;
   border: 1px solid #f1f1f1;
   box-sizing: border-box;
-  transition: border .3s,box-shadow .3s;
+  transition: border 0.3s, box-shadow 0.3s;
   cursor: pointer;
 
   :hover {
     border-color: transparent;
-    box-shadow: 0 10px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
   }
 `;
 
@@ -102,4 +103,3 @@ export const UserName = styled.span`
 export const NumberContainer = styled.span`
   margin-left: 0.2rem;
 `;
-
