@@ -32,7 +32,7 @@ jobs:
         run: npm run build-dev --if-present
   
      - name: zip 생성
-        run: zip -qq -r ./build-fe.zip .
+        run: zip -qq -r ./build.zip .
         shell: bash
 
       - name: Configure AWS credentials
