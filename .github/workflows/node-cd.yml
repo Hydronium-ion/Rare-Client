@@ -31,10 +31,6 @@ jobs:
       - name: Run npm run build
         run: npm run build-dev --if-present
 
-      - name: zip 생성
-        run: zip -qq -r ./build.zip .
-        shell: bash
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
