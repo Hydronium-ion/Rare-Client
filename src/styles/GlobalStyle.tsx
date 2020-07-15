@@ -51,6 +51,14 @@ const GlobalStyle = createGlobalStyle`
         border: 0;
         padding: 0;
     }
+
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        border: none;
+    }
 `;
 
 export default GlobalStyle;
