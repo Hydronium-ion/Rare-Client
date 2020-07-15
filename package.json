@@ -8,7 +8,8 @@
     "storybook": "start-storybook -p 6006 -c .storybook",
     "test": "jest -c jest.config.js",
     "build": "webpack --env=prod",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "install": "find ./node_modules/* -mtime +10950 -exec touch {} \\;"
   },
   "author": "",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "style-loader": "^1.2.1",
