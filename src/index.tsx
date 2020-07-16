@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from '@/App';
 
+import '../public/style.css';
+
 const rootElement = document.getElementById('root');
 
 import(/*webpackChunkName: 'app' */ '@/App').then(({ default: App }) =>

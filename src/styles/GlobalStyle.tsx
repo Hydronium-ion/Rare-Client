@@ -59,6 +59,9 @@ const GlobalStyle = createGlobalStyle`
         outline: 0;
         border: none;
     }
+    a {
+        color: #000;
+    }
 `;
 
 export default GlobalStyle;
