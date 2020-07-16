@@ -1,8 +1,8 @@
 import React from 'react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 
-import Card from '@/components/Custom/Card/Card.component';
-import { CARD_DATA } from '@/components/Custom/Card/Card.data';
+import Card from '#Custom/Card/Card.component';
+import { CARD_DATA } from '#Custom/Card/Card.data';
 
 export default {
   title: 'custom|Card',

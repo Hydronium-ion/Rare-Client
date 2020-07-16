@@ -1,7 +1,7 @@
 import React from 'react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 
-import Header from '@/components/Header/Header.component';
+import Header from '#/Header/Header.component';
 
 export default {
   title: 'components|Header',

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Icon from '@/components/Custom/Icon/Icon.component';
-import Avatar from '@/components/Custom/Avatar/Avatar.component';
+import Icon from '#Icon/Icon.component';
+import Avatar from '#Custom/Avatar/Avatar.component';
 
 import {
   CardContainer,

@@ -2,8 +2,8 @@ import React from 'react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
-import Button from '@/components/Custom/Button/Button.component';
-import Icon from '@/components/Custom/Icon/Icon.component';
+import Button from '#Custom/Button/Button.component';
+import Icon from '#Custom/Icon/Icon.component';
 
 export default {
   title: 'custom|Button',
