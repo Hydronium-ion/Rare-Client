@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Button from '@/components/Custom/Button/Button.component';
-import Icon from '@/components/Custom/Icon/Icon.component';
+import Button from '#Custom/Button/Button.component';
+import Icon from '#Custom/Icon/Icon.component';
 
 import { Container, Spacing } from './Navigation.styles';
 

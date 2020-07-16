@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Input from '@/components/Custom/Input/Input.component';
+import Input from '#Custom/Input/Input.component';
 
 const Search = () => {
   return (

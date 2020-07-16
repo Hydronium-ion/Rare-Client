@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Icon from '@/components/Custom/Icon/Icon.component';
-import Button from '@/components/Custom/Button/Button.component';
-import Avatar from '@/components/Custom/Avatar/Avatar.component';
+import Icon from '#Icon/Icon.component';
+import Button from '#Custom/Button/Button.component';
+import Avatar from '#Custom/Avatar/Avatar.component';
 
 import { Container, LeftHeader, RightHeader, UserProfile } from './Header.styles';
 

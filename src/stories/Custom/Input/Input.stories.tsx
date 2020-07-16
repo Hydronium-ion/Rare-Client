@@ -1,9 +1,9 @@
 import React from 'react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 
-import Input from '@/components/Custom/Input/Input.component';
+import Input from '#Custom/Input/Input.component';
 
-import GlobalStyle from '@/styles/GlobalStyle';
+import GlobalStyle from '@Styles/GlobalStyle';
 
 export default {
   title: 'custom|Input',

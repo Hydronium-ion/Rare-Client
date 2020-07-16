@@ -1,8 +1,8 @@
 import React, { useRef, useState, ChangeEvent, useEffect, useMemo } from 'react';
 
-import Icon from '@/components/Custom/Icon/Icon.component';
+import Icon from '#Icon/Icon.component';
 
-import { debounce } from '@/utils/util';
+import { debounce } from '@Utils/util';
 
 import { InputContainer, InputBody } from './Input.styles';
 

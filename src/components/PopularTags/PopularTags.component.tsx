@@ -9,8 +9,8 @@ const PopularTags = () => {
     <div>
       <TagTitle>인기 태그</TagTitle>
       <ul>
-        {POPULAR_TAGS.slice(0, 10).map(tag => (
-          <Tag># {tag}</Tag>
+        {POPULAR_TAGS.slice(0, 10).map((tag, index) => (
+          <Tag key={index}># {tag}</Tag>
         ))}
       </ul>
     </div>
