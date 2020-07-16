@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Main from '@Pages/Main/Main.component';
 import Search from '@Pages/Search/Search.component';
+import Header from '#/Header/Header.component';
 
 import GlobalStyle from '@Styles/GlobalStyle';
 
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Header />
       <Switch>
         <Route path="/" component={Main} exact />
         <Route path="/search" component={Search} />

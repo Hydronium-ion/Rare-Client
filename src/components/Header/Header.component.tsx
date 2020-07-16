@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Icon from '#Icon/Icon.component';
 import Button from '#Custom/Button/Button.component';
@@ -10,10 +11,14 @@ const Header = () => {
   return (
     <Container>
       <LeftHeader>
-        <Icon icon="rare" size="10rem" />
+        <Link to="/">
+          <Icon icon="rare" size="10rem" />
+        </Link>
       </LeftHeader>
       <RightHeader>
-        <Icon icon="search" />
+        <Link to="/search">
+          <Icon icon="search" />
+        </Link>
         <Button theme="hover" size="medium">
           로그인
         </Button>
