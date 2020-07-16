@@ -62,6 +62,10 @@ const GlobalStyle = createGlobalStyle`
     a {
         color: #000;
     }
+    body {
+      background-color: rgb(248, 249, 250);
+        
+    }
 `;
 
 export default GlobalStyle;

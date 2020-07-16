@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import Icon from '#Icon/Icon.component';
 import Button from '#Custom/Button/Button.component';
 import Avatar from '#Custom/Avatar/Avatar.component';
+import Dropdown from '#Custom/Dropdown/Dropdown.component';
 
-import { Container, LeftHeader, RightHeader, UserProfile } from './Header.styles';
+import { Container, LeftHeader, RightHeader } from './Header.styles';
 
 const Header = () => {
   return (
@@ -22,10 +23,7 @@ const Header = () => {
         <Button theme="hover" size="medium">
           로그인
         </Button>
-        <UserProfile>
-          <Avatar src="https://img.hankyung.com/photo/201906/03.19979855.1.jpg" size="medium" />
-          <Icon icon="downArrow" size="0.4rem" />
-        </UserProfile>
+        <Dropdown />
         <Icon icon="bell" />
       </RightHeader>
     </Container>
