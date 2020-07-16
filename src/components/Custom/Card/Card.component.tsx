@@ -26,12 +26,13 @@ export interface ICardProp {
   createAt: string;
   views: number;
   likes: number;
+  refCard: ((instance: HTMLDivElement | null) => void) | null;
 }
 
 const Card = (props: ICardProp) => {
-  const { title, contents, thumbnail, avatar, username, createAt, views, likes } = props;
+  const { title, contents, thumbnail, avatar, username, createAt, views, likes, refCard } = props;
   return (
-    <CardContainer>
+    <CardContainer ref={refCard}>
       <div>
         <div>
           <CardTitle>{title}</CardTitle>

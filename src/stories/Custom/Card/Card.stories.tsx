@@ -11,5 +11,5 @@ export default {
 };
 
 export const card = () => {
-  return <Card {...CARD_DATA} />;
+  return <Card refCard={null} {...CARD_DATA} />;
 };

@@ -17,13 +17,3 @@ export const RightHeader = styled.div`
   /**로그인이 안 되면 10rem */
   width: 18rem;
 `;
-
-export const UserProfile = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  & > img {
-    margin-right: 0.6rem;
-  }
-`;
