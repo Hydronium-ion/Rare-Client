@@ -10,7 +10,14 @@ module.exports = {
   testRegex: '\\.test\\.tsx$',
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   moduleNameMapper: {
-    '^@/(.*)': '<rootDir>/src/$1'
+    '\\.svg': '<rootDir>/src/__mocks__/fileMock.ts',
+    '^@/(.*)': '<rootDir>/src/$1',
+    '^#/(.*)': '<rootDir>/src/components/$1',
+    '^#Custom/(.*)': '<rootDir>/src/components/Custom/$1',
+    '^#Icon/(.*)': '<rootDir>/src/components/Custom/Icon/$1',
+    '^@Pages/(.*)': '<rootDir>/src/pages/$1',
+    '^@Styles/(.*)': '<rootDir>/src/styles/$1',
+    '^@Utils/(.*)': '<rootDir>/src/utils/$1'
   },
   globals: {
     'ts-jest': {
