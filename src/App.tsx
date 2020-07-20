@@ -1,9 +1,11 @@
 import React from 'react';
+import {} from 'react-router';
 import { Route, Switch } from 'react-router-dom';
 
 import Main from '@Pages/Main/Main.component';
 import Search from '@Pages/Search/Search.component';
 import Header from '#/Header/Header.component';
+import MyBlog from '@Pages/MyBlog/MyBlog.component';
 
 import GlobalStyle from '@Styles/GlobalStyle';
 
@@ -13,8 +15,17 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <Switch>
-        <Route path="/" component={Main} exact />
+        <Route path="/" exact component={Main} />
         <Route path="/search" component={Search} />
+        <Route
+          path="/myblog/:id"
+          exact
+          render={({ match }) => (
+            <div>
+              <h1>Author equals: {match.params.id || 'None'}</h1>
+            </div>
+          )}
+        />
       </Switch>
     </>
   );
