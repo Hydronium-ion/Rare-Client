@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const UserProfile = styled.div`
   cursor: pointer;
   position: relative;
@@ -16,7 +15,7 @@ export const UserProfile = styled.div`
 export const Content = styled.ul`
   position: absolute;
   top: 3.2rem;
-  right: 6.4rem;
+  right: 0;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
   background-color: white;
@@ -31,11 +30,10 @@ export const ListContainer = styled.div`
   :hover {
     background: rgb(211, 237, 253);
   }
-  `;
+`;
 
 export const List = styled.li`
   display: block;
   width: 100%;
   cursor: pointer;
 `;
-

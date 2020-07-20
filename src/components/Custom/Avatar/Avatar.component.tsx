@@ -8,7 +8,7 @@ export interface IAvatarProp {
 }
 
 const Avatar = ({ src, size }: IAvatarProp) => {
-  return <AvatarImg src={src} size={size} />;
+  return <AvatarImg src={src} size={size} alt="user-profile" />;
 };
 
 export default Avatar;
