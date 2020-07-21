@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, Thumbnail, ThumbnailContainer, Title, Contents, Footer, CreatedAt } from './Contents.styles';
+import { Container, Thumbnail, ThumbnailContainer, Title, Contents, Tags, Footer, CreatedAt } from './Contents.styles';
+
+import Tag from '#Custom/Tag/Tag.component';
 
 interface IBlogFragmentProp {
   title: string;
@@ -20,6 +22,9 @@ const BlogFragment = (props: IBlogFragmentProp) => {
       <div>
         <Title>{title}</Title>
         <Contents>{contents}</Contents>
+        <Tags>
+          <Tag to="/myblog/123" tag="nextjs" />
+        </Tags>
         <Footer>
           <CreatedAt>{createdAt}</CreatedAt>
           <span>{commentCount}개의 댓글</span>

@@ -36,6 +36,10 @@ export const Contents = styled.div`
   margin-bottom: 0.5rem;
 `;
 
+export const Tags = styled.div`
+  display: flex;
+`;
+
 export const Footer = styled.div`
   display: flex;
   font-size: 12px;
