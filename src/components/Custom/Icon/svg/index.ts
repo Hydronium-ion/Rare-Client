@@ -8,3 +8,5 @@ export { ReactComponent as bell } from './bell.svg';
 export { ReactComponent as downArrow } from './down-arrow.svg';
 export { ReactComponent as fire } from './fire.svg';
 export { ReactComponent as clock } from './clock.svg';
+export { ReactComponent as leftArrow } from './left-arrow.svg';
+export { ReactComponent as rightArrow } from './right-arrow.svg';
