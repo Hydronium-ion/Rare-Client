@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 import { IAvatarProp } from './Avatar.component';
 
 const big = css`
-  height: 4.5em;
-  width: 4.5rem;
+  height: 7rem;
+  width: 7rem;
 `;
 
 const medium = css`
