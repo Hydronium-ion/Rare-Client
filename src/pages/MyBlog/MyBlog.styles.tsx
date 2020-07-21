@@ -7,3 +7,7 @@ export const Container = styled.div`
   margin: 0 auto;
   min-height: 100vh;
 `;
+
+export const ContentsContainer = styled.div`
+  position: relative;
+`;

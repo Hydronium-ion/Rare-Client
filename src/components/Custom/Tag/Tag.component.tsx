@@ -8,7 +8,7 @@ interface ITagProp {
 }
 
 const Tag = ({ tag, to }: ITagProp) => {
-  return <TagLink to={to}>tag</TagLink>;
+  return <TagLink to={to}>{tag}</TagLink>;
 };
 
 export default Tag;
