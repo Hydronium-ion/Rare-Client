@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import useSelectActives from '@Hooks/useSelectActives';
 import { getEnumLength } from '@Utils/util';
 
-import { ColoredLink, Container } from './BlogContents.styles';
+import { ColoredLink, Container } from './Navigation.styles';
 
 enum EBlogContentsType {
   'BLOG' = 0,

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Avatar from '#Custom/Avatar/Avatar.component';
 
-import { Container, UserInfoContainer, Nickname, Introduction } from './BlogUserProfile.styles';
+import { Container, UserInfoContainer, Nickname, Introduction } from './UserProfile.styles';
 
 interface IBlogUserProfileProp {
   nickname: string;

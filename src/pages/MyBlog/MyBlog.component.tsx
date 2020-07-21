@@ -1,9 +1,9 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-import BlogUserProfile from '#/BlogUserProfile/BlogUserProfile.component';
-import BlogContents from '#/BlogContents/BlogContents.component';
-import BlogFrament from '#/BlogFragment/BlogFragment.component';
+import BlogUserProfile from '@/components/MyBlog/UserProfile/UserProfile.component';
+import BlogContents from '@/components/MyBlog/Navigation/Navigation.component';
+import BlogFrament from '@/components/MyBlog/Contents/Contents.component';
 
 import { Container } from './MyBlog.styles';
 

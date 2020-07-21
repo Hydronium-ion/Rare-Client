@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Thumbnail, ThumbnailContainer, Title, Contents, Footer, CreatedAt } from './BlogFragment.styles';
+import { Container, Thumbnail, ThumbnailContainer, Title, Contents, Footer, CreatedAt } from './Contents.styles';
 
 interface IBlogFragmentProp {
   title: string;

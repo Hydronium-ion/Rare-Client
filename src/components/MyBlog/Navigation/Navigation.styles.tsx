@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
-import { IColoredLinkProp } from './BlogContents.component';
+import { IColoredLinkProp } from './Navigation.component';
 
 export const Container = styled.div`
   display: flex;
