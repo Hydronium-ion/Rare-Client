@@ -20,3 +20,7 @@ export const debounce = (callback: Function, seconds: number) => {
     inDebounce = setTimeout(() => callback.apply(context, args), seconds);
   };
 };
+
+export const getEnumLength = (target: Object) => {
+  return Object.keys(target).length / 2;
+};

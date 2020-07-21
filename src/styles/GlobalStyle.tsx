@@ -59,9 +59,13 @@ const GlobalStyle = createGlobalStyle`
         outline: 0;
         border: none;
     }
+    
     a {
-        color: #000;
+        color: #fff; 
+        text-decoration: none; 
+        outline: none
     }
+
     body {
       background-color: rgb(248, 249, 250);
         
