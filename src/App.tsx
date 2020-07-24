@@ -8,7 +8,7 @@ import Posts from '@Pages/Posts/Posts.component';
 import MyBlog from '@Pages/MyBlog/MyBlog.component';
 import Profile from '@Pages/Profile/Profile.component';
 import Header from '#/Header/Header.component';
-
+import Write from '@Pages/Write/Write.component';
 import GlobalStyle from '@Styles/GlobalStyle';
 
 const App = () => {
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/search" component={Search} />
         <Route path="/posts/:id" component={Posts} />
         <Route path="/profile/:id" component={Profile} />
+        <Route path="/write" component={Write} />
         <Route
           path="/myblog/:id"
           exact
