@@ -18,13 +18,13 @@ export const InfoContainer = styled.div`
   margin-bottom: 1rem;
 `;
 
-export const TitleContainer = styled.div`
+export const DefaultInfoContainer = styled.div`
   width: 75%;
   display: flex;
   justify-content: space-between;
 `;
 
-export const Title = styled.div`
+export const DefaultInfo = styled.div`
   width: 75%;
   font-size: 20px;
 `;
@@ -33,7 +33,7 @@ export const About = styled.p`
   font-size: 20px;
 `;
 
-export const Input = styled.input`
+export const Modify = styled.input`
   display: block;
   box-sizing: border-box;
   color: rgb(73, 80, 87);
@@ -52,7 +52,7 @@ export const Input = styled.input`
   font-weight: 600;
 `;
 
-export const InputContainer = styled.div`
+export const ModifyContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 75%;

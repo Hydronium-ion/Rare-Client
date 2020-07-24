@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Button from '#Custom/Button/Button.component';
 
-import { Container, InfoContainer, About, Menu } from './Leave.styles';
+import { Container, InfoContainer, About, Menu } from '#/Profile/Input/Input.styles';
 
 const Leave = () => {
   return (
