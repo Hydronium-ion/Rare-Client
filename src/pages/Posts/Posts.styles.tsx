@@ -1,9 +1,8 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 export const PostsContainer = styled.div`
   position: relative;
   margin-top: 5rem;
-  
 `;
 
 export const LeftContent = styled.div`
@@ -17,14 +16,14 @@ export const IconContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D3EDFD;
+  background-color: #d3edfd;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(241, 243, 245);
   border-image: initial;
   border-radius: 2rem;
   padding: 0.5rem;
-`
+`;
 
 export const IconBox = styled.div`
   display: flex;
@@ -37,13 +36,13 @@ export const IconBox = styled.div`
   border-image: initial;
   border-radius: 50%;
   padding: 0.5rem;
-`
+`;
 export const LikesNumberContainer = styled.div`
   margin: 0.5rem 0 0.8rem;
   span {
     font-size: 0.8rem;
   }
-`
+`;
 
 export const MainContent = styled.div`
   width: 800px;
@@ -54,7 +53,7 @@ export const RightContent = styled.div`
   position: absolute;
   right: 0rem;
   width: 270px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   color: rgb(134, 142, 150);
   div {
@@ -91,7 +90,7 @@ export const Tag = styled.div`
   display: inline-flex;
   align-items: center;
   margin-right: 0.875rem;
-  color: #1263CE;
+  color: #1263ce;
   font-weight: 500;
   font-size: 1rem;
   background: rgb(241, 243, 245);
@@ -100,18 +99,18 @@ export const Tag = styled.div`
 `;
 
 export const PostContentContainer = styled.div`
-  border-top: 2px solid #E9ECEF;
+  border-top: 2px solid #e9ecef;
   padding: 2rem 0;
   width: 100%;
   img {
-    width: 100%
+    width: 100%;
   }
 `;
 
 export const UserProfileContainer = styled.div`
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #E9ECEF;
+  border-bottom: 2px solid #e9ecef;
   padding: 2rem 0;
   margin-bottom: 4rem;
 `;
@@ -129,7 +128,7 @@ export const NextPostContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-`
+`;
 
 const postBox = css`
   cursor: pointer;
@@ -142,27 +141,27 @@ const postBox = css`
   align-items: center;
   background: rgb(248, 249, 250);
   text-decoration: none;
-`
+`;
 
 export const PrevPostBox = styled.div`
-  ${ postBox }
+  ${postBox}
   justify-content: flex-start;
-`
+`;
 
 export const NextPostBox = styled.div`
-  ${ postBox }
+  ${postBox}
   justify-content: flex-end;
-`
+`;
 
 export const PostBox = styled.div`
   margin: 0 1rem;
-`
+`;
 
 export const PostMenu = styled.div`
   font-size: 0.75rem;
   font-weight: bold;
   color: rgb(73, 80, 87);
-`
+`;
 
 export const PostMenuTitle = styled.h3`
   width: 100%;
@@ -174,22 +173,22 @@ export const PostMenuTitle = styled.h3`
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 0.5rem 0px 0px;
-`
+`;
 
 export const CommentContainer = styled.div`
   margin-bottom: 4rem;
-`
+`;
 
 export const CommentNumber = styled.h4`
   font-size: 1.125rem;
   line-height: 1.5;
   font-weight: 600;
   margin-bottom: 1rem;
-`
+`;
 
 export const CommentBox = styled.div`
   display: block;
-`
+`;
 
 export const CommentTextarea = styled.textarea`
   height: 70px;
@@ -208,9 +207,9 @@ export const CommentTextarea = styled.textarea`
   border-image: initial;
   border-radius: 4px;
   box-sizing: border-box;
-`
+`;
 
 export const CommentButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-`
+`;

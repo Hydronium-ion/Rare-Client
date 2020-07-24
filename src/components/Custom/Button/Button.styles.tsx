@@ -70,6 +70,19 @@ const activeNavigation = css`
   ${navigationBorderStyle}
 `;
 
+const underlined = css`
+  outline: 0;
+  background-color: #fff;
+  border-radius: 0px;
+  color: #1ea7fd;
+  border-bottom: 1px solid #1ea7fd;
+  :hover {
+    color: #fff;
+    background-color: #1ea7fd;
+    border-color: #1ea7fd;
+  }
+`;
+
 const getButtonTheme = (props: IButtonProp) => {
   switch (props.theme) {
     case 'primary':
@@ -82,6 +95,8 @@ const getButtonTheme = (props: IButtonProp) => {
       return hover;
     case 'navigation':
       return props.active ? activeNavigation : navigation;
+    case 'underlined':
+      return underlined;
   }
 };
 
