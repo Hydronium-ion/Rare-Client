@@ -3,21 +3,19 @@ import React, { useState } from 'react';
 import Button from '#Custom/Button/Button.component';
 import Icon from '#Custom/Icon/Icon.component';
 
+import useSelectActives from '@Hooks/useSelectActives';
+import { getEnumLength } from '@Utils/util';
+
 import { Container, Spacing } from './Navigation.styles';
 
 enum EButtonType {
   'TRENDING' = 0,
   'RECENT' = 1
 }
+const contentsLength = getEnumLength(EButtonType);
 
 const Navigation = () => {
-  const [actives, setActives] = useState([true, false]);
-
-  const clickHandler = (index: EButtonType) => () => {
-    if (actives[index]) return;
-
-    setActives(actives.map(active => !active));
-  };
+  const { actives, clickHandler } = useSelectActives<EButtonType>(contentsLength);
 
   return (
     <Container>

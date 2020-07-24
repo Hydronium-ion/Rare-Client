@@ -51,6 +51,7 @@ module.exports = {
       '#': path.resolve(__dirname, 'src/components/'),
       '#Custom': path.resolve(__dirname, 'src/components/Custom/'),
       '#Icon': path.resolve(__dirname, 'src/components/Custom/Icon/'),
+      '@Hooks': path.resolve(__dirname, 'src/hooks/'),
       '@Pages': path.resolve(__dirname, 'src/pages/'),
       '@Styles': path.resolve(__dirname, 'src/styles/'),
       '@Utils': path.resolve(__dirname, 'src/utils/')

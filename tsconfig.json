@@ -21,6 +21,7 @@
       "#/*": ["src/components/*"],
       "#Custom/*": ["src/components/Custom/*"],
       "#Icon/*": ["src/components/Custom/Icon/*"],
+      "@Hooks/*": ["src/hooks/*"],
       "@Pages/*": ["src/pages/*"],
       "@Styles/*": ["src/styles/*"],
       "@Utils/*": ["src/utils/*"]

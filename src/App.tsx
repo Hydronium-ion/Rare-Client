@@ -20,17 +20,9 @@ const App = () => {
         <Route path="/" exact component={Main} />
         <Route path="/search" component={Search} />
         <Route path="/posts/:id" component={Posts} />
+        <Route path="/myblog/:id" component={MyBlog} />
         <Route path="/profile/:id" component={Profile} />
         <Route path="/write" component={Write} />
-        <Route
-          path="/myblog/:id"
-          exact
-          render={({ match }) => (
-            <div>
-              <h1>Author equals: {match.params.id || 'None'}</h1>
-            </div>
-          )}
-        />
       </Switch>
     </>
   );
