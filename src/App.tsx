@@ -5,9 +5,10 @@ import { Route, Switch } from 'react-router-dom';
 import Main from '@Pages/Main/Main.component';
 import Search from '@Pages/Search/Search.component';
 import Posts from '@Pages/Posts/Posts.component';
-import Header from '#/Header/Header.component';
 import MyBlog from '@Pages/MyBlog/MyBlog.component';
-
+import Profile from '@Pages/Profile/Profile.component';
+import Header from '#/Header/Header.component';
+import Write from '@Pages/Write/Write.component';
 import GlobalStyle from '@Styles/GlobalStyle';
 
 const App = () => {
@@ -20,6 +21,8 @@ const App = () => {
         <Route path="/search" component={Search} />
         <Route path="/posts/:id" component={Posts} />
         <Route path="/myblog/:id" component={MyBlog} />
+        <Route path="/profile/:id" component={Profile} />
+        <Route path="/write" component={Write} />
       </Switch>
     </>
   );
