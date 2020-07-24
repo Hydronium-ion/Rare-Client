@@ -7,6 +7,7 @@ import Search from '@Pages/Search/Search.component';
 import Posts from '@Pages/Posts/Posts.component';
 import Header from '#/Header/Header.component';
 import MyBlog from '@Pages/MyBlog/MyBlog.component';
+import Write from '@Pages/Write/Write.component';
 
 import GlobalStyle from '@Styles/GlobalStyle';
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" exact component={Main} />
         <Route path="/search" component={Search} />
         <Route path="/posts/:id" component={Posts} />
+        <Route path="/write" component={Write} />
         <Route
           path="/myblog/:id"
           exact
