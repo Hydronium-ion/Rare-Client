@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Button as ButtonContainer } from './Button.styles';
 
-export type ButtonTheme = 'primary' | 'secondary' | 'noOutline' | 'hover' | 'navigation';
+export type ButtonTheme = 'primary' | 'secondary' | 'noOutline' | 'hover' | 'navigation' | 'underlined';
 export type ButtonSize = 'big' | 'medium' | 'small';
 
 export interface IButtonProp {
