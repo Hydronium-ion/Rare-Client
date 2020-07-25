@@ -50,6 +50,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 100%;
         border: 0;
         padding: 0;
+        background-color: #fff;
     }
 
     input {
