@@ -39,8 +39,6 @@ export const ModalInner = styled.div`
   transform: translateY(-50%);
   margin: 0 auto;
   padding: 40px 20px;
-
-  /* 수정필요 X버튼 아이콘 컴포넌트로 대체할것 */
 `;
 
 export const CloseModalButtonContainer = styled.div`

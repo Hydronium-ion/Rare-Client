@@ -28,6 +28,15 @@ export const hoverButton = () => {
   );
 };
 
+export const hoverButton2 = () => {
+  return (
+    <Button theme="hover" size="medium">
+      <Icon icon="lock" color="#868E96" size="12" margin="0rem 0.75rem 0rem 0rem" />
+      <span>비공개</span>
+    </Button>
+  );
+};
+
 export const customButton = () => {
   const size = select('size', ['small', 'medium', 'big'], 'medium');
   const theme = select('theme', ['primary', 'secondary', 'noOutline', 'hover'], 'primary');

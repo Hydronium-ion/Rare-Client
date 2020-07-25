@@ -1,6 +1,7 @@
 import React, { ReactNode, useEffect } from 'react';
 
 import Portal from '#/Common/Portal/Portal.component';
+import Icon from '#/Custom/Icon/Icon.component';
 import { ModalOverlay, ModalWrapper, ModalInner, CloseModalButtonContainer } from './Modal.styles';
 
 export interface IVisible {
@@ -10,8 +11,8 @@ export interface IVisible {
 
 interface IClosable {
   onClose: Function;
-  maskClosable: any;
-  closable: any;
+  maskClosable: boolean;
+  closable: boolean;
 }
 
 type IModalProps =  IVisible & IClosable & { children: ReactNode };
@@ -50,7 +51,9 @@ const Modal = ({ onClose, maskClosable, closable, visible, children }: IModalPro
         <ModalInner tabIndex={0}>
           {closable && 
             <CloseModalButtonContainer>
-              <button onClick={close}>x</button>
+              <button onClick={close}>
+                <Icon icon="close" size="12" />
+              </button>
             </CloseModalButtonContainer>}
           { children }
         </ModalInner>
