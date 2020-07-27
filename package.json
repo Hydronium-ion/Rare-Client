@@ -27,6 +27,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
     "style-loader": "^1.2.1",
     "styled-components": "^5.1.1",
     "typescript": "^3.9.2"
@@ -52,6 +53,8 @@
     "@types/react-dom": "^16.9.7",
     "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.5",
+    "@types/redux-logger": "^3.0.8",
+    "@types/redux-saga": "^0.10.5",
     "@types/styled-components": "^5.1.0",
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",

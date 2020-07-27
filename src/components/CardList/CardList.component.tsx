@@ -1,18 +1,27 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 import Card from '#Custom/Card/Card.component';
 
 import { Container } from './CardList.styles';
 
-import { CARD_DATA } from './CardList.data';
+import { fetchBlogsStart } from '@/store/blog/blog.actions';
+import { IBlog } from '@/store/blog/blog.types';
+import { RootState } from '@/store/rootReducer';
 
 const CardList = () => {
-  
+  const { blogs }: { blogs: null | IBlog[] } = useSelector((state: RootState) => state.blog);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBlogsStart());
+  }, []);
+
   const [target, setTarget] = useState<HTMLDivElement | null>(null);
   const setRefTarget = (a: HTMLDivElement | null) => {
     setTarget(a);
   };
-  const [card, setCard] = useState(CARD_DATA)
+
   const options = {
     root: null,
     threshold: 0.5,
@@ -26,9 +35,6 @@ const CardList = () => {
           return;
         }
         observer.unobserve(entry.target);
-        fetch('http://localhost:8080/todo')
-          .then((res) => res.json())
-          .then((res) => setCard([...card,...res]))
       });
     };
 
@@ -41,12 +47,14 @@ const CardList = () => {
 
   return (
     <Container>
-      {
-        card.map((cardData, index) => {
-          const lastElement = index === card.length - 1;
-          return <Card {...cardData} key={index} refCard={lastElement ? setRefTarget : null} />
+      {blogs ? (
+        blogs.map((cardData, index) => {
+          const lastElement = index === blogs.length - 1;
+          return <Card {...cardData} key={index} refCard={lastElement ? setRefTarget : null} />;
         })
-      }
+      ) : (
+        <div>test</div>
+      )}
     </Container>
   );
 };
