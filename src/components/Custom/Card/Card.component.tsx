@@ -17,26 +17,29 @@ import {
   NumberContainer
 } from './Card.styles';
 
-export interface ICardProp {
-  title: string;
-  contents: string;
-  thumbnail: string;
-  avatar: string;
-  username: string;
-  createAt: string;
-  views: number;
-  likes: number;
+import { IBlog } from '@/store/blog/blog.types';
+
+export type ICardProp = {
   refCard: ((instance: HTMLDivElement | null) => void) | null;
-}
+} & IBlog;
 
 const Card = (props: ICardProp) => {
-  const { title, contents, thumbnail, avatar, username, createAt, views, likes, refCard } = props;
+  const {
+    title,
+    content,
+    thumbnail,
+    author: { id, name, avatarUrl },
+    createdAt,
+    views,
+    likes,
+    refCard
+  } = props;
   return (
     <CardContainer ref={refCard}>
       <div>
         <div>
           <CardTitle>{title}</CardTitle>
-          <CardContents>{contents}</CardContents>
+          <CardContents>{content}</CardContents>
         </div>
       </div>
       <ThumbnailContainer>
@@ -45,10 +48,10 @@ const Card = (props: ICardProp) => {
       <CardFooter>
         <UserContainer>
           <span>
-            <Avatar src={avatar} size="small" />
+            <Avatar src={avatarUrl} size="small" />
           </span>
-          <UserName>{username}</UserName>
-          <span>{createAt}</span>
+          <UserName>{name}</UserName>
+          <span>{createdAt}</span>
         </UserContainer>
         <UserInteractionContainer>
           <ViewsContainer>
