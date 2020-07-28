@@ -32,7 +32,9 @@ module.exports = {
       '#Icon': path.resolve(__dirname, '../src/components/Custom/Icon/'),
       '@Hooks': path.resolve(__dirname, '../src/hooks/'),
       '@Pages': path.resolve(__dirname, '../src/pages/'),
+      '@Store': path.resolve(__dirname, '../src/store/'),
       '@Styles': path.resolve(__dirname, '../src/styles/'),
+      '@Types': path.resolve(__dirname, '../src/types/'),
       '@Utils': path.resolve(__dirname, '../src/utils/')
     };
 

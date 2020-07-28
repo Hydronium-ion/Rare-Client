@@ -1,4 +1,5 @@
-import BlogActionTypes, { IBlog } from './blog.types';
+import BlogActionTypes from './blog.types';
+import IBlog from '@Types/Blog';
 
 export const fetchBlogsStart = () => ({
   type: BlogActionTypes.FETCH_BLOGS_START,

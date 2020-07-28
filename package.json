@@ -8,8 +8,7 @@
     "storybook": "start-storybook -p 6006 -c .storybook",
     "test": "jest -c jest.config.js",
     "build": "webpack --env=prod",
-    "cypress": "cypress open",
-    "install": "find ./node_modules/* -mtime +10950 -exec touch {} \\;"
+    "cypress": "cypress open"
   },
   "author": "",
   "license": "MIT",

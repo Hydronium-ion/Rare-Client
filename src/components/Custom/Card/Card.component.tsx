@@ -17,7 +17,7 @@ import {
   NumberContainer
 } from './Card.styles';
 
-import { IBlog } from '@/store/blog/blog.types';
+import IBlog from '@Types/Blog';
 
 export type ICardProp = {
   refCard: ((instance: HTMLDivElement | null) => void) | null;

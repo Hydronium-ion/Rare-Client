@@ -6,7 +6,7 @@ import Card from '#Custom/Card/Card.component';
 import { Container } from './CardList.styles';
 
 import { fetchBlogsStart } from '@/store/blog/blog.actions';
-import { IBlog } from '@/store/blog/blog.types';
+import IBlog from '@Types/Blog';
 import { RootState } from '@/store/rootReducer';
 
 const CardList = () => {
