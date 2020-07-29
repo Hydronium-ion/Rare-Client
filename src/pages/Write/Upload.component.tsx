@@ -1,11 +1,20 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 
 import Button from '#/Custom/Button/Button.component';
 import Icon from '#Custom/Icon/Icon.component';
 
 import { UploadContainer, ModalTitleContainer, ImageContainer, ModalTextarea, PublicButtonContainer, TumbnailButtonContainer, SubmitContainer } from './Upload.styles';
 
+import { fetchPostStart } from '@/store/post/post.actions';
+
 const Upload = () => {
+  const dispatch = useDispatch();
+
+  const submitPost = async () => {
+    await dispatch(fetchPostStart('post'));
+  }
+
   return (
     <UploadContainer>
       <div>
@@ -38,7 +47,7 @@ const Upload = () => {
           </Button>
         </PublicButtonContainer>
       </div>
-      <SubmitContainer>
+      <SubmitContainer onClick={submitPost}>
         <span>작성하기</span>
       </SubmitContainer>
     </UploadContainer>
