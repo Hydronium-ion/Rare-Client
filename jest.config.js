@@ -17,7 +17,9 @@ module.exports = {
     '^#Icon/(.*)': '<rootDir>/src/components/Custom/Icon/$1',
     '^@Hooks/(.*)': '<rootDir>/src/hooks/$1',
     '^@Pages/(.*)': '<rootDir>/src/pages/$1',
+    '^@Store/(.*)': '<rootDir>/src/store/$1',
     '^@Styles/(.*)': '<rootDir>/src/styles/$1',
+    '^@Types/(.*)': '<rootDir>/src/types/$1',
     '^@Utils/(.*)': '<rootDir>/src/utils/$1'
   },
   globals: {

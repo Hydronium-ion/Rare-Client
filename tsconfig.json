@@ -23,7 +23,9 @@
       "#Icon/*": ["src/components/Custom/Icon/*"],
       "@Hooks/*": ["src/hooks/*"],
       "@Pages/*": ["src/pages/*"],
+      "@Store/*": ["src/store/*"],
       "@Styles/*": ["src/styles/*"],
+      "@Types/*": ["src/types/*"],
       "@Utils/*": ["src/utils/*"]
     }
   },
