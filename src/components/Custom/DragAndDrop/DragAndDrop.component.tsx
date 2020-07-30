@@ -17,7 +17,6 @@ const DragAndDrop = ({ dropCallback, children }: IDragAndDropProp) => {
     e.preventDefault();
     e.stopPropagation();
 
-    console.log('drag in');
     setDragCount(dragCount + 1);
     if (e.dataTransfer && e.dataTransfer.items && e.dataTransfer.items.length <= 1) {
       setDragging(true);
@@ -28,7 +27,6 @@ const DragAndDrop = ({ dropCallback, children }: IDragAndDropProp) => {
     e.preventDefault();
     e.stopPropagation();
     setDragging(false);
-    console.log('drag out');
     // setDragCount(formerDragCount => {
     //   if (formerDragCount === 1) {
     //     setDragging(false);

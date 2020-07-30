@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const githubMarkdownCss = css`
-  
-`;
+const githubMarkdownCss = css``;
 
 export const WriteContainer = styled.div`
   display: flex;
@@ -43,7 +41,7 @@ export const WriteTitle = styled.input`
   border-image: initial;
 `;
 
-export const WriteFooter  = styled.div`
+export const WriteFooter = styled.div`
   /* border-top: 2px solid #E9ECEF;
   padding-top: 1rem */
   display: flex;
@@ -56,6 +54,7 @@ export const WriteScreen = styled.div`
 
 export const MarkdownScreen = styled.div`
   height: calc(100% - 181.94px);
+  width: 600px;
 `;
 
 export const TagContainer = styled.div`
@@ -63,7 +62,7 @@ export const TagContainer = styled.div`
   font-size: 1.125rem;
   display: flex;
   flex-wrap: wrap;
-`
+`;
 
 export const TagInput = styled.input`
   display: inline-flex;
@@ -77,11 +76,10 @@ export const TagInput = styled.input`
   border-style: none;
   border-color: initial;
   border-image: initial;
-`
-
+`;
 
 export const MarkdownPreivewContainer = styled.div`
   overflow-y: scroll;
   min-width: 600px;
   max-width: 600px;
-`
+`;
