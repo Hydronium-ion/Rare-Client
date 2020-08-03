@@ -3,8 +3,15 @@ import { useDispatch } from 'react-redux';
 
 import Button from '#/Custom/Button/Button.component';
 import Icon from '#Custom/Icon/Icon.component';
+import ThumbnailUpload from './ThumbnailUplaod.component';
 
-import { UploadContainer, ModalTitleContainer, ImageContainer, ModalTextarea, PublicButtonContainer, TumbnailButtonContainer, SubmitContainer } from './Upload.styles';
+import {
+  UploadContainer,
+  ModalTitleContainer,
+  ModalTextarea,
+  PublicButtonContainer,
+  SubmitContainer
+} from './Upload.styles';
 
 import { fetchPostStart } from '@/store/post/post.actions';
 
@@ -19,14 +26,7 @@ const Upload = () => {
     <UploadContainer>
       <div>
         <ModalTitleContainer>포스트 미리보기</ModalTitleContainer>
-        <ImageContainer>
-          <TumbnailButtonContainer>
-            <Icon icon="picture" size="100" />
-            <Button theme="hover" size="medium">
-              <span>썸네일 업로드</span>
-            </Button>
-          </TumbnailButtonContainer>
-        </ImageContainer>
+        <ThumbnailUpload />
       </div>
       <div>
         <ModalTitleContainer>포스트 작성 제목</ModalTitleContainer>

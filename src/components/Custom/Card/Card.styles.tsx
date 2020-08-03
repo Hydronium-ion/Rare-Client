@@ -20,7 +20,7 @@ export const CardContainer = styled.div`
 
 export const Avatar = styled.img`
   border-radius: 50%;
-  object-fit: conver;
+  object-fit: cover;
   width: 1.2rem;
   height: 1.2rem;
   display: inline-block;
