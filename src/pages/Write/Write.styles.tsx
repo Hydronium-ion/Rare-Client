@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { ResponsiveWidth } from '@Styles/PageContainer.styles';
 
 const githubMarkdownCss = css``;
 
@@ -9,6 +10,7 @@ export const WriteContainer = styled.div`
   padding-left: 3rem;
   padding-right: 3rem;
   justify-content: space-between;
+  ${ResponsiveWidth}
 `;
 
 export const PreviewContainer = styled.div`
@@ -50,11 +52,17 @@ export const WriteFooter = styled.div`
 
 export const WriteScreen = styled.div`
   /* width: 100%; */
+  @media (max-width: ${({ theme }) => theme.sizes.xl}) {
+    width: 100%;
+  }
 `;
 
 export const MarkdownScreen = styled.div`
   height: calc(100% - 181.94px);
   width: 600px;
+  @media (max-width: ${({ theme }) => theme.sizes.xl}) {
+    width: 100%;
+  }
 `;
 
 export const TagContainer = styled.div`
@@ -82,4 +90,7 @@ export const MarkdownPreivewContainer = styled.div`
   overflow-y: scroll;
   min-width: 600px;
   max-width: 600px;
+  @media (max-width: ${({ theme }) => theme.sizes.xl}) {
+    display: none;
+  }
 `;

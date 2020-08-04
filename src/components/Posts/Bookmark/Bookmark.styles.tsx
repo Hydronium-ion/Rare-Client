@@ -2,11 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: absolute;
-  right: 0rem;
+  right: -17rem;
   width: 270px;
   display: flex;
   flex-direction: column;
   color: rgb(134, 142, 150);
+
+  @media (max-width: ${({ theme }) => theme.sizes.xl}) {
+    display: none;
+  }
 `;
 
 export const MarkContainer = styled.div`

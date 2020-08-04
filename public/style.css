@@ -2,3 +2,9 @@
   width: 1300px;
   margin: 0 auto;
 }
+
+@media all and (min-width: 200px) {
+  #root {
+    width: 100vw;
+  }
+}

@@ -6,6 +6,9 @@ export const Container = styled.div`
   width: 11.5rem;
   right: -13.5rem;
   background-color: #efefef;
+  @media (max-width: ${({ theme }) => theme.sizes.xl}) {
+    display: none;
+  }
 `;
 
 export const Title = styled.div`

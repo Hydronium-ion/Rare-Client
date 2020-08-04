@@ -3,7 +3,11 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   position: absolute;
   /* position: fixed; */
-  left: 5rem;
+  left: -7rem;
+
+  @media (max-width: ${({ theme }) => theme.sizes.xl}) {
+    display: none;
+  }
 `;
 
 export const IconContainer = styled.div`

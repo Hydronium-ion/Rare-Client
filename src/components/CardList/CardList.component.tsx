@@ -37,7 +37,6 @@ const CardList = () => {
         observer.unobserve(entry.target);
       });
     };
-
     const io = new IntersectionObserver(handleIntersection, options);
     if (target) {
       io.observe(target);
