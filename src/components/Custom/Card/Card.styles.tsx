@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  margin: 0 0 1rem 0;
+  margin: 0 0.8rem 1rem 0;
   font-size: 0.7rem;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,32 @@ export const CardContainer = styled.div`
   :hover {
     border-color: transparent;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  @media (min-width: 1px) {
+    width: 90vw;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.sizes.md}) {
+    width: 42%;
+    margin-left: calc((100% - 84%) / 3);
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.sizes.lg}) {
+    width: 30%;
+    margin: 0;
+    margin-left: calc((100% - 90%) / 4);
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.sizes.xl}) {
+    width: 24%;
+    margin: 0;
+    margin-left: calc((100% - (24% * 4)) / 5);
+    margin-bottom: 1rem;
   }
 `;
 

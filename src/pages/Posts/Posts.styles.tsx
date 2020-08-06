@@ -1,12 +1,14 @@
 import styled, { css } from 'styled-components';
+import { ResponsiveWidth } from '@Styles/PageContainer.styles';
 
 export const PostsContainer = styled.div`
   position: relative;
   margin-top: 5rem;
+  ${ResponsiveWidth}
 `;
 
 export const MainContent = styled.div`
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
 `;
 
