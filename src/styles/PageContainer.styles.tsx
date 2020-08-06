@@ -9,7 +9,7 @@ export const ResponsiveWidth = css`
 
   @media (min-width: ${({ theme }) => theme.sizes.md}) {
     width: 95vw;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: ${({ theme }) => theme.sizes.lg}) {
