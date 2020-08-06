@@ -3,19 +3,18 @@ import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 
 import GlobalTheme from '@Styles/GlobalTheme.component';
 
-import Card from '#Custom/Card/Card.component';
-import { CARD_DATA } from '#Custom/Card/Card.data';
+import SkeletonCard from '#Custom/Card/SkeletonCard.component';
 
 export default {
-  title: 'custom|Card',
-  component: Card,
+  title: 'custom|SkeletonCard',
+  component: SkeletonCard,
   decorators: [withKnobs]
 };
 
-export const card = () => {
+export const skeletonCard = () => {
   return (
     <GlobalTheme>
-      <Card refCard={null} {...CARD_DATA} />
+      <SkeletonCard />
     </GlobalTheme>
   );
 };

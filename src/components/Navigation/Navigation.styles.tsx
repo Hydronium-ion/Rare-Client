@@ -12,15 +12,15 @@ export const Container = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.sizes.md}) {
-    margin: 0  calc((100% - 84%) / 3) 2rem calc((100% - 84%) / 3);
+    margin: 0  calc((100% - 84%) / 3) 2rem 0;
   }
 
   @media (min-width: ${({ theme }) => theme.sizes.lg}) {
-    margin: 0  calc((100% - 90%) / 4) 2rem calc((100% - 90%) / 4);
+    margin: 0  calc((100% - 90%) / 4) 2rem 0;
   }
 
   @media (min-width: ${({ theme }) => theme.sizes.xl}) {
-    margin: 0  calc((100% - (24% * 4)) / 5) 2rem calc((100% - (24% * 4)) / 5);
+    margin: 0  calc((100% - (24% * 4)) / 5) 2rem 0;
   }
 `;
 

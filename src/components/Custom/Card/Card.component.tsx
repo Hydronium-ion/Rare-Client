@@ -43,7 +43,7 @@ const Card = (props: ICardProp) => {
         </div>
       </div>
       <ThumbnailContainer>
-        <img src={thumbnail} alt="" />
+        <img src={thumbnail} alt="user-thumbnail" />
       </ThumbnailContainer>
       <CardFooter>
         <UserContainer>
