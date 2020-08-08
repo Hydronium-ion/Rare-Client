@@ -9,7 +9,7 @@ export function* fetchBlogs() {
   try {
     const {
       data: { response }
-    } = yield axios.get(`${process.env.SERVER}/api/posts`);
+    } = yield axios.get(`${process.env.SERVER}/api/posts/createdAt`);
     yield put(fetchBlogsSuccess(response));
   } catch (error) {
     yield put(fetchBlogsFailure(error.message));

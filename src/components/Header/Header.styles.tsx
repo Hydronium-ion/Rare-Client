@@ -18,15 +18,15 @@ export const Headers = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.sizes.md}) {
-    margin: 2rem calc((100% - 84%) / 3);
+    margin: 2rem 0 2rem calc((100% - 84%) / 3);
   }
 
   @media (min-width: ${({ theme }) => theme.sizes.lg}) {
-    margin: 2rem calc((100% - 90%) / 4);
+    margin: 2rem 0 2rem calc((100% - (30% * 3)) / 4);
   }
 
   @media (min-width: ${({ theme }) => theme.sizes.xl}) {
-    margin: 2rem auto;
+    margin: 2rem 0 2rem calc((100% - (24% * 4)) / 5);
   }
 `;
 
