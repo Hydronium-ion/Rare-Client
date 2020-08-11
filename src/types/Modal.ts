@@ -1,7 +1,5 @@
 interface IModal {
-  title: string;
-  content: string;
-  callback: Function;
+  modalType: 'default' | 'login';
   on: boolean;
 }
 

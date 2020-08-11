@@ -3,8 +3,7 @@ import { ModalAction } from './modal.actions';
 
 const INITIAL_STATE = {
   on: false,
-  title: '',
-  content: '',
+  modalType: 'default',
   callback: () => {}
 };
 
@@ -13,16 +12,12 @@ const modalReducer = (state = INITIAL_STATE, action: ModalAction) => {
     case ModalActionTypes.OPEN_MODAL:
       return {
         on: true,
-        title: action.payload?.title,
-        content: action.payload?.content,
-        callback: action.payload?.content
+        modalType: action.payload?.modalType
       };
     case ModalActionTypes.CLOSE_MODAL:
       return {
         on: false,
-        title: '',
-        content: '',
-        callback: () => {}
+        modalType: 'default'
       };
     default:
       return state;

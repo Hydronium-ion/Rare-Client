@@ -59,15 +59,36 @@ const showUpContentWithAnimation = ({ isOn }: IModalOn) => {
   `;
 };
 
-export const Content = styled.div`
+export const ModalBox = styled.div`
   overflow: auto;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  height: 400px;
-  margin-left: -250px;
-  margin-top: -200px;
+  width: 40vw;
+  height: 30vh;
   background: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   ${showUpContentWithAnimation}
+`;
+
+export const Buttons = styled.div`
+  display: flex;
+`;
+
+export const Title = styled.div`
+  font-size: 2rem;
+  font-weight: bold;
+`;
+
+export const Content = styled.div``;
+
+export const ModalBoxContainer = styled.div`
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
