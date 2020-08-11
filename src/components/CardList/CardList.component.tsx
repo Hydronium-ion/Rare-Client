@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import Card from '#Custom/Card/Card.component';
@@ -10,7 +10,6 @@ import { SkeletonCardContainer } from '#Custom/Card/SkeletonCard.styles';
 import { fetchBlogsStart } from '@/store/blog/blog.actions';
 import IBlog from '@Types/Blog';
 import { RootState } from '@/store/rootReducer';
-import { findByLabelText } from '@testing-library/react';
 
 const CardList = () => {
   const { blogs }: { blogs: null | IBlog[] } = useSelector((state: RootState) => state.blog);
