@@ -1,11 +1,17 @@
+import IUser from './User';
+
 interface IPost {
   title: string;
   subTitle: string;
+  createdAt: string;
+  id: number;
+  likes: number;
   content: string;
   thumbnail: string;
-  authorId: number;
+  author: IUser;
   tags: string[];
-  public: boolean
+  views: number;
+  public: boolean;
 }
 
 export default IPost;

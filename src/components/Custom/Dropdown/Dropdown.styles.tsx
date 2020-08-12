@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 export const UserProfile = styled.div`
   cursor: pointer;
   position: relative;
@@ -23,7 +25,8 @@ export const Content = styled.ul`
   font-size: 14px;
 `;
 
-export const ListContainer = styled.div`
+export const ListContainer = styled(Link)`
+  display: block;
   color: #212529;
   width: 9rem;
   padding: 0.6rem 0.6rem 0.6rem 1rem;

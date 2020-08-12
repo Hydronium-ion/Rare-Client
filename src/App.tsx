@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Main from '@Pages/Main/Main.component';
 import Search from '@Pages/Search/Search.component';
-import Posts from '@Pages/Posts/Posts.component';
+import Posts from '@/pages/Post/Post.component';
 import MyBlog from '@Pages/MyBlog/MyBlog.component';
 import Profile from '@Pages/Profile/Profile.component';
 import Write from '@Pages/Write/Write.component';
