@@ -1,12 +1,12 @@
 import React from 'react';
 import Avartar from '#Custom/Avatar/Avatar.component';
 
-import { Comment } from '@/types/Comment';
+import { IComment } from '@/types/Comment';
 
 import {CommentsListContainer, UserProfileContainer, CommentWrap, UserProfile, EditCommentContainer, UserInfo, CreateAt, UserName} from './CommentItem.style'
 
 interface PostCommentItemProps {
-  comment: Comment;
+  comment: IComment;
   ownComment: boolean;
   onRemove: (id: string) => any;
 }

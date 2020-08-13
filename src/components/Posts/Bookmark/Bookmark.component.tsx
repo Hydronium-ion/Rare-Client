@@ -10,8 +10,8 @@ const Bookmark = ({ marks }: IBookMarkProp) => {
   return (
     <Container>
       <MarkContainer>
-        {marks.map(mark => (
-          <Mark>{mark}</Mark>
+        {marks.map((mark, index) => (
+          <Mark key={index}>{mark}</Mark>
         ))}
       </MarkContainer>
     </Container>

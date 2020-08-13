@@ -28,7 +28,7 @@ const blogReducer = (state = INITIAL_STATE, action: BlogAction) => {
       };
     default:
       return state;
-  }
+  };
 };
 
 export default blogReducer;

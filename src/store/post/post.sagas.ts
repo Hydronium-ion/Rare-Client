@@ -33,7 +33,7 @@ export function* fetchPost() {
     }
     
     const rightfulFetch = getFetchType(type.post.method, payload);
-    const response = yield rightfulFetch(`${process.env.SERVER}/api/posts`);
+    const response = yield rightfulFetch(`${process.env.SERVER}/api/posts/createdAt`);
 
     yield put(fetchPostSuccess(response));
   } catch (error) {
