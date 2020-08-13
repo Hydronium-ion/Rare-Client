@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { IVisible } from './Modal.component'
+import { IVisible } from './Modal.component';
 
 export const ModalWrapper = styled.div`
   box-sizing: border-box;
@@ -45,4 +45,4 @@ export const CloseModalButtonContainer = styled.div`
   position: absolute;
   top: 4px;
   right: 4px;
-`
+`;

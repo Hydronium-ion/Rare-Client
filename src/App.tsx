@@ -3,11 +3,12 @@ import { Route, Switch } from 'react-router-dom';
 
 import Main from '@Pages/Main/Main.component';
 import Search from '@Pages/Search/Search.component';
-import Posts from '@Pages/Posts/Posts.component';
+import Posts from '@/pages/Post/Post.component';
 import MyBlog from '@Pages/MyBlog/MyBlog.component';
 import Profile from '@Pages/Profile/Profile.component';
-import Header from '#/Header/Header.component';
 import Write from '@Pages/Write/Write.component';
+import Header from '#/Header/Header.component';
+import Modal from '#Custom/Modal/Modal.component';
 
 import GlobalStyle from '@Styles/GlobalStyle';
 import GlobalTheme from '@Styles/GlobalTheme.component';
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/profile/:id" component={Profile} />
           <Route path="/write" component={Write} />
         </Switch>
+        <Modal />
       </GlobalTheme>
     </>
   );

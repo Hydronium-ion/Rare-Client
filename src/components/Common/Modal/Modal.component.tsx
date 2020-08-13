@@ -15,51 +15,47 @@ interface IClosable {
   closable: boolean;
 }
 
-type IModalProps =  IVisible & IClosable & { children: ReactNode };
+type IModalProps = IVisible & IClosable & { children: ReactNode };
 
 const Modal = ({ onClose, maskClosable, closable, visible, children }: IModalProps) => {
-
   const onMaskClick = (e: any) => {
     if (e.target === e.currentTarget) {
-      onClose(e)
+      onClose(e);
     }
-  }
+  };
 
   const close = (e: any) => {
     if (onClose) {
-      onClose(e)
+      onClose(e);
     }
-  }
+  };
 
   useEffect(() => {
-    document.body.style.cssText = `position: fixed; top: -${window.scrollY}px`
+    document.body.style.cssText = `position: fixed; top: -${window.scrollY}px`;
     return () => {
-      const scrollY = document.body.style.top
-      document.body.style.cssText = `position: ""; top: "";`
-      window.scrollTo(0, parseInt(scrollY || '0') * -1)
-    }
-  }, [])
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = `position: ""; top: "";`;
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    };
+  }, []);
 
   return (
     <Portal elementId="modal-root">
-      <ModalOverlay visible={ visible } />
-      <ModalWrapper 
-        visible={ visible }
-        onClick={ maskClosable ? onMaskClick : null }
-        tabIndex={-1}
-        > 
+      <ModalOverlay visible={visible} />
+      <ModalWrapper visible={visible} onClick={maskClosable ? onMaskClick : null} tabIndex={-1}>
         <ModalInner tabIndex={0}>
-          {closable && 
+          {closable && (
             <CloseModalButtonContainer>
               <button onClick={close}>
                 <Icon icon="close" size="12" />
               </button>
-            </CloseModalButtonContainer>}
-          { children }
+            </CloseModalButtonContainer>
+          )}
+          {children}
         </ModalInner>
       </ModalWrapper>
     </Portal>
-  )
-}
+  );
+};
 
-export default Modal
+export default Modal;

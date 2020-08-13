@@ -13,3 +13,6 @@ export { ReactComponent as rightArrow } from './right-arrow.svg';
 export { ReactComponent as globe } from './globe.svg';
 export { ReactComponent as picture } from './picture.svg';
 export { ReactComponent as close } from './close.svg';
+export { ReactComponent as github } from './github.svg';
+export { ReactComponent as google } from './google.svg';
+export { ReactComponent as facebook } from './facebook.svg';

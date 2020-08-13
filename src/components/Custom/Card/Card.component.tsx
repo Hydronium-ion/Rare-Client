@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import Icon from '#Icon/Icon.component';
 import Avatar from '#Custom/Avatar/Avatar.component';
@@ -28,14 +29,19 @@ const Card = (props: ICardProp) => {
     title,
     content,
     thumbnail,
-    author: { id, name, avatarUrl },
+    author: { name, avatarUrl },
     createdAt,
     views,
     likes,
-    refCard
+    refCard,
+    id
   } = props;
+  const history = useHistory();
+  const goToCardDetail = () => {
+    history.push(`posts/${id}`);
+  };
   return (
-    <CardContainer ref={refCard}>
+    <CardContainer ref={refCard} onClick={goToCardDetail}>
       <div>
         <div>
           <CardTitle>{title}</CardTitle>
