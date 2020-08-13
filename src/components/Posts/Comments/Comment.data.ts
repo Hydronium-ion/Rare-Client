@@ -1,11 +1,11 @@
 export const COMMENT_DATA = [
   {
-    id: '1',
+    id: '11',
     user: {
       id: '1',
       username: 'huey',
       profile: {
-        id: '1',
+        id: '21',
         thumbnail: 'https://img.hankyung.com/photo/201906/03.19979855.1.jpg'
       },
     },
@@ -14,12 +14,12 @@ export const COMMENT_DATA = [
     deleted: false
   },
   {
-    id: '2',
+    id: '12',
     user: {
       id: '2',
       username: 'won',
       profile: {
-        id: '2',
+        id: '22',
         thumbnail: 'https://img.hankyung.com/photo/201906/03.19979855.1.jpg'
       },
     },
@@ -28,12 +28,12 @@ export const COMMENT_DATA = [
     deleted: false
   },
   {
-    id: '3',
+    id: '13',
     user: {
       id: '3',
       username: 'hamil',
       profile: {
-        id: '3',
+        id: '23',
         thumbnail: 'https://img.hankyung.com/photo/201906/03.19979855.1.jpg'
       },
     },
@@ -42,12 +42,12 @@ export const COMMENT_DATA = [
     deleted: false
   },
   {
-    id: '4',
+    id: '14',
     user: {
       id: '4',
       username: 'han',
       profile: {
-        id: '4',
+        id: '24',
         thumbnail: 'https://img.hankyung.com/photo/201906/03.19979855.1.jpg'
       },
     },

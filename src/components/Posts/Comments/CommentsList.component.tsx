@@ -2,12 +2,12 @@ import React from 'react';
 
 import CommentItem from './CommentItem.component';
 
-import { Comment } from '@/types/Comment';
+import { IComment } from '@/types/Comment';
 
 import { PostCommentsListBlock } from './CommentsList.style';
 
 interface PostCommentsListProps {
-  comments: Comment[];
+  comments: IComment[];
   currentUserId: null | string;
   onRemove: (id: string) => any;
 }
