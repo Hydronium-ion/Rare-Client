@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { TagLink } from './Tag.styles';
 
@@ -8,7 +9,9 @@ interface ITagProp {
 }
 
 const Tag = ({ tag, to }: ITagProp) => {
-  return <TagLink to={to}>{tag}</TagLink>;
+  return (
+      <TagLink to={`/tags/${to}`}>{tag}</TagLink>    
+  );
 };
 
 export default Tag;
