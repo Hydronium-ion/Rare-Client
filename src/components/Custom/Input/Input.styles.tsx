@@ -12,7 +12,7 @@ const focusOn = css`
 
 export const InputContainer = styled.div`
   /* 재사용시 width 수정 / 지금은 검색용으로 사용중 */
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   padding: 0 1.5rem;
   height: 4rem;

@@ -30,19 +30,19 @@ const Input = ({ onSearch }: IInputProp) => {
   const searchForDebounce = useMemo(() => {
     return debounce((searchQuery: string) => {
       onSearch(searchQuery);
-    }, 2000);
+    }, 1000);
   }, [onSearch]);
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
-    searchForDebounce(value);
+    searchForDebounce(e.target.value);
   };
 
   return (
     <InputContainer onClick={onClick} focus={focus}>
       <Icon icon="search" size="1.5rem" color={focus ? '#000' : '#adb5bd'} />
       <InputBody
-        onChange={onChange}
+        onInput={onChange}
         ref={inputRef}
         onFocus={focusOn}
         onBlur={focusOff}

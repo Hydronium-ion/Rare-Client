@@ -23,7 +23,7 @@ const BlogFragment = (props: IBlogFragmentProp) => {
         <Title>{title}</Title>
         <Contents>{contents}</Contents>
         <Tags>
-          <Tag to="/myblog/123" tag="nextjs" />
+          <Tag to="리액트" tag="nextjs" />
         </Tags>
         <Footer>
           <CreatedAt>{createdAt}</CreatedAt>

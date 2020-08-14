@@ -9,6 +9,7 @@ import Profile from '@Pages/Profile/Profile.component';
 import Write from '@Pages/Write/Write.component';
 import Header from '#/Header/Header.component';
 import Modal from '#Custom/Modal/Modal.component';
+import Tag from '@/pages/Tag/Tag.component';
 
 import GlobalStyle from '@Styles/GlobalStyle';
 import GlobalTheme from '@Styles/GlobalTheme.component';
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/myblog/:id" component={MyBlog} />
           <Route path="/profile/:id" component={Profile} />
           <Route path="/write" component={Write} />
+          <Route path="/tags/:id" component={Tag} />
         </Switch>
         <Modal />
       </GlobalTheme>

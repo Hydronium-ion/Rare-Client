@@ -33,7 +33,7 @@ const Header = () => {
         </LeftHeader>
         <RightHeader>
           <Link to="/search">
-            <Icon icon="search" />
+            <Icon icon="search" color="black" />
           </Link>
           <Button theme="hover" size="medium" onClick={openLoginModal}>
             로그인
