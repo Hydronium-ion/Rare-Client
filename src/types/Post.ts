@@ -12,6 +12,7 @@ interface IPost {
   tags: string[];
   views: number;
   public: boolean;
+  comment: number;
 }
 
 export default IPost;
