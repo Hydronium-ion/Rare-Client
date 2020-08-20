@@ -6,9 +6,9 @@ export const fetchBlogsStart = () => ({
   payload: null
 });
 
-export const fetchBlogsSuccess = (blogsMap: IBlog[]) => ({
+export const fetchBlogsSuccess = (blogs: IBlog[]) => ({
   type: BlogActionTypes.FETCH_BLOGS_SUCCESS,
-  payload: blogsMap
+  payload: blogs
 });
 
 export const fetchBlogsFailure = (errorMessage: string) => ({
@@ -16,7 +16,25 @@ export const fetchBlogsFailure = (errorMessage: string) => ({
   payload: errorMessage
 });
 
+export const fetchAdditionalBlogsStart = () => ({
+  type: BlogActionTypes.FETCH_ADDITIONAL_BLOGS_START,
+  payload: null
+})
+
+export const fetchAdditionalBlogsSuccess = (blogs: IBlog[]) => ({
+  type: BlogActionTypes.FETCH_ADDITIONAL_BLOGS_SUCCESS,
+  payload: blogs
+});
+
+export const fetchAdditionalBlogsFailure = (errorMessage: string) => ({
+  type: BlogActionTypes.FETCH_ADDITIONAL_BLOGS_FAILURE,
+  payload: errorMessage
+});
+
 export type BlogAction =
   | ReturnType<typeof fetchBlogsStart>
   | ReturnType<typeof fetchBlogsSuccess>
-  | ReturnType<typeof fetchBlogsFailure>;
+  | ReturnType<typeof fetchBlogsFailure>
+  | ReturnType<typeof fetchAdditionalBlogsStart>
+  | ReturnType<typeof fetchAdditionalBlogsSuccess>
+  | ReturnType<typeof fetchAdditionalBlogsFailure>;

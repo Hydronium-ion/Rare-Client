@@ -1,10 +1,12 @@
 import BlogActionTypes from './blog.types';
 import { BlogAction } from './blog.actions';
+import IBlog from "@Types/Blog";
 
 const INITIAL_STATE = {
-  blogs: null,
+  blogs: [],
   isFetching: false,
-  errorMessage: undefined
+  errorMessage: undefined,
+  page: 0
 };
 
 const blogReducer = (state = INITIAL_STATE, action: BlogAction) => {
@@ -12,7 +14,8 @@ const blogReducer = (state = INITIAL_STATE, action: BlogAction) => {
     case BlogActionTypes.FETCH_BLOGS_START:
       return {
         ...state,
-        isFetching: true
+        isFetching: true,
+        page: 0
       };
     case BlogActionTypes.FETCH_BLOGS_SUCCESS:
       return {
@@ -21,6 +24,24 @@ const blogReducer = (state = INITIAL_STATE, action: BlogAction) => {
         blogs: action.payload
       };
     case BlogActionTypes.FETCH_BLOGS_FAILURE:
+      return {
+        ...state,
+        isFetching: false,
+        errorMessage: action.payload
+      };
+    case BlogActionTypes.FETCH_ADDITIONAL_BLOGS_START:
+      return {
+        ...state,
+        isFetching: true,
+        page: state.page + 1
+      }
+    case BlogActionTypes.FETCH_ADDITIONAL_BLOGS_SUCCESS:
+      return {
+        ...state,
+        isFetching: false,
+        blogs: (<IBlog[]>state.blogs).concat((<IBlog[]>action.payload))
+      };
+    case BlogActionTypes.FETCH_ADDITIONAL_BLOGS_FAILURE:
       return {
         ...state,
         isFetching: false,
