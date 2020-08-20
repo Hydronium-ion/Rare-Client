@@ -7,12 +7,12 @@ import SkeletonCard from '#Custom/Card/SkeletonCard.component';
 import { Container } from './CardList.styles';
 import { SkeletonCardContainer } from '#Custom/Card/SkeletonCard.styles';
 
-import { fetchBlogsStart } from '@/store/blog/blog.actions';
+import { fetchBlogsStart, fetchAdditionalBlogsStart } from '@/store/blog/blog.actions';
 import IBlog from '@Types/Blog';
 import { RootState } from '@/store/rootReducer';
 
 const CardList = () => {
-  const { blogs }: { blogs: null | IBlog[] } = useSelector((state: RootState) => state.blog);
+  const { blogs }: { blogs: IBlog[] } = useSelector((state: RootState) => state.blog);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -36,6 +36,7 @@ const CardList = () => {
         if (!entry.isIntersecting) {
           return;
         }
+        dispatch(fetchAdditionalBlogsStart());
         observer.unobserve(entry.target);
       });
     };
@@ -48,19 +49,19 @@ const CardList = () => {
 
   return (
     <Container>
-      {blogs ? (
+      {blogs.length !== 0 ? (
         blogs.map((cardData, index) => {
           const lastElement = index === blogs.length - 1;
           return <Card {...cardData} key={index} refCard={lastElement ? setRefTarget : null} />;
         })
       ) : (
-        <SkeletonCardContainer>
-          <SkeletonCard />
-          <SkeletonCard />
-          <SkeletonCard />
-          <SkeletonCard />
-        </SkeletonCardContainer>
-      )}
+          <SkeletonCardContainer>
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+          </SkeletonCardContainer>
+        )}
     </Container>
   );
 };
