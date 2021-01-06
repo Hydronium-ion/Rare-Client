@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/marked": "^1.1.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "codemirror": "^5.56.0",
     "css-loader": "^3.5.3",
     "dotenv-webpack": "^1.8.0",
