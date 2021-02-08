@@ -20,7 +20,7 @@
     "dotenv-webpack": "^1.8.0",
     "github-markdown-css": "^4.0.0",
     "highlight.js": "^10.1.2",
-    "marked": "^1.1.1",
+    "marked": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
